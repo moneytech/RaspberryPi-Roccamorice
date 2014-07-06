@@ -1,0 +1,19 @@
+#!/usr/bin/expect
+set timeout 30
+puts "starting git push origin master"
+spawn  git push origin master
+puts "awaiting Username"
+#expect "Username for 'https://github.com':"
+expect "Username "
+puts "sending Username"
+#stty noecho
+send "laurence.schenk@gmail.com\r"
+puts "awaiting Password"
+expect "Password "
+#expect "Password for 'https://laurence.schenk@gmail.com@github.com':"
+puts "Sending password"
+send "Coldipozzo50\r"
+#stty echo
+#what to expect is system command prompt different for each location
+expect "$"
+

@@ -1,0 +1,29 @@
+
+god web page
+http://godrb.com/
+
+/home/pi/.rvm/gems/ruby-2.0.0-p247/bin/god -c /home/pi/src/god.programs
+use -D to debug
+
+put executabe shell into
+/etc/init.d
+and run
+sudo update-rc.d start_god.sh defaults
+
+sudo update-rc.d -f  blah remove
+
+article on how to do boot sequencing:
+http://www.debian-administration.org/articles/28
+
+
+various commands:
+god stop/start  display
+
+to test shell script:
+/etc/init.d/blah {start|stop}
+
+to stop all monitoring (but god will continue to run)..restart with start command
+/home/pi/.rvm/gems/ruby-2.0.0-p247/bin/god stop
+
+this works
+sudo su - pi -c '/home/pi/.rvm/gems/ruby-2.0.0-p247/bin/god --version'

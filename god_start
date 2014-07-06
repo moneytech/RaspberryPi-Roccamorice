@@ -1,0 +1,3 @@
+#export GEM_HOME=/home/pi/.rvm/gems/ruby-2.0.0-p247
+#sudo su - pi
+sudo su - pi -c '/home/pi/.rvm/gems/ruby-2.0.0-p247/bin/god -c /home/pi/src/god.programs'
